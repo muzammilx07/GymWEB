@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Main container */
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #212121; /* Dark background */
+  padding: 20px;
+  color: #fff; /* Light text */
+}
+
+/* Input bar */
+.input-bar {
+  width: calc(100% / 6);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #424242; /* Darker border */
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #333; /* Dark input background */
+  color: #fff; /* Light text */
+  position: fixed;
+}
+
+/* Exercise container */
+.exercise-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Exercise card */
+.exercise-card {
+  width: calc(25% - 20px);
+  margin: 10px;
+  border: 1px solid #333; /* Darker border */
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dark shadow */
+  background-color: #333; /* Dark card background */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Exercise image */
+.exercise-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Exercise details */
+.exercise-details {
+  padding: 10px;
+}
+
+/* Exercise name */
+.exercise-name {
+  margin-top: 0;
+  color: #fff; /* Light text */
+}
+
+/* Exercise info */
+.exercise-info {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc; /* Lighter text */
+}
+
+/* Load more button */
+.load-more-button {
+  background-color: #2196F3; /* Blue button */
+  color: #fff; /* Light text */
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.load-more-button:hover {
+  background-color: #0b7dda; /* Darker blue on hover */
 }
